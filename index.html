@@ -4,78 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Movie Database</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to the Online Movie Database</h1>
+        <div class="container">
+            <h1>Online Movie Database</h1>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Most Popular Movies</h2>
-            <ul>
-                <li>The Shawshank Redemption</li>
-                <li>The Godfather</li>
-                <li>The Dark Knight</li>
-                <li>Forrest Gump</li>
-                <li>Pulp Fiction</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Highest Rated Movies</h2>
-            <ol>
-                <li>The Godfather</li>
-                <li>The Shawshank Redemption</li>
-                <li>The Dark Knight</li>
-                <li>12 Angry Men</li>
-                <li>Schindler's List</li>
-            </ol>
-        </section>
-        <section>
-            <h2>Featured Movies</h2>
-            <img src="../src/pictures/movie1.jpg" alt="Movie 1" style="width: 200px; height: auto;">
-            <img src="../src/pictures/movie2.jpg" alt="Movie 2" style="width: 200px; height: auto;">
-            <img src="../src/pictures/movie3.jpg" alt="Movie 3" style="width: 200px; height: auto;">
-        </section>
-        <section>
-            <h2>Search for a Movie</h2>
-            <form action="search.php" method="get">
-                <label for="search">Search:</label>
-                <input type="text" id="search" name="search">
-                <button type="submit">Search</button>
+
+    <div class="container">
+        <div id="search-container">
+            <form action="#" method="GET">
+                <input type="text" name="search" placeholder="Search movies...">
+                <input type="submit" value="Search">
             </form>
-        </section>
-        <section>
-            <h2>Movie Ratings</h2>
-            <table border="1">
-                <tr>
-                    <th>Movie Title</th>
-                    <th>Rating</th>
-                </tr>
-                <tr>
-                    <td>The Godfather</td>
-                    <td>9.2</td>
-                </tr>
-                <tr>
-                    <td>The Shawshank Redemption</td>
-                    <td>9.3</td>
-                </tr>
-                <tr>
-                    <td>The Dark Knight</td>
-                    <td>9.0</td>
-                </tr>
-                <tr>
-                    <td>12 Angry Men</td>
-                    <td>8.9</td>
-                </tr>
-                <tr>
-                    <td>Schindler's List</td>
-                    <td>8.9</td>
-                </tr>
-            </table>
-        </section>
-    </main>
+        </div>
+        <h2>Most Popular Movies</h2>
+        <div class="movies">
+            
+            <div class="movie">
+                <img src="src/pictures/movie3.jpg" alt="The Shawshank Redemption">
+                <div class="movie-info">
+                    <h3 class="movie-title">The Shawshank Redemption</h3>
+                    <p class="movie-rating">Rating: 9.3</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="src/pictures/movie1.jpg" alt="The Godfather">
+                <div class="movie-info">
+                    <h3 class="movie-title">The Godfather</h3>
+                    <p class="movie-rating">Rating: 9.2</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="src/pictures/movie2.jpg" alt="The Dark Knight">
+                <div class="movie-info">
+                    <h3 class="movie-title">The Dark Knight</h3>
+                    <p class="movie-rating">Rating: 9.0</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="src/pictures/movie5.jpg" alt="Forrest Gump">
+                <div class="movie-info">
+                    <h3 class="movie-title">Forrest Gump</h3>
+                    <p class="movie-rating">Rating: 8.8</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="src/pictures/movie4.jpg" alt="Pulp Fiction">
+                <div class="movie-info">
+                    <h3 class="movie-title">Pulp Fiction</h3>
+                    <p class="movie-rating">Rating: 8.9</p>
+                </div>
+            </div>
+            
+        </div>
+        <h2>Highest Rated Movies</h2>
+        <div class="movies">
+
+            <div class="movie">
+                <img src="src/pictures/movie3.jpg" alt="The Shawshank Redemption">
+                <div class="movie-info">
+                    <h3 class="movie-title">The Shawshank Redemption</h3>
+                    <p class="movie-rating">Rating: 9.3</p>
+                </div>
+            </div>
+           
+            <div class="movie">
+                <img src="src/pictures/movie1.jpg" alt="The Godfather">
+                <div class="movie-info">
+                    <h3 class="movie-title">The Godfather</h3>
+                    <p class="movie-rating">Rating: 9.2</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="src/pictures/movie2.jpg" alt="The Dark Knight">
+                <div class="movie-info">
+                    <h3 class="movie-title">The Dark Knight</h3>
+                    <p class="movie-rating">Rating: 9.0</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="src/pictures/movie6.jpg" alt="12 Angry Men">
+                <div class="movie-info">
+                    <h3 class="movie-title">12 Angry Men</h3>
+                    <p class="movie-rating">Rating: 9.0</p>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="src/pictures/movie7.jpg" alt="Schindler's List">
+                <div class="movie-info">
+                    <h3 class="movie-title">Schindler's List</h3>
+                    <p class="movie-rating">Rating: 9.0</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
     <footer>
-        <p>Visit our <a href="about.html">About</a> page to learn more.</p>
+        <div class="container">
+            <p>&copy; 2024 Online Movie Database</p>
+        </div>
     </footer>
 </body>
 </html>
