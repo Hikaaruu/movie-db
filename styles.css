@@ -71,3 +71,25 @@ input[type="submit"] {
     margin-top: 20px;
 
 }
+
+/* Tablet Version */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .movie {
+        width: 29%; 
+    }
+
+    input[type="text"] {
+        width: 250px; 
+    }
+}
+
+/* Mobile Version */
+@media only screen and (max-width: 767px) {
+    .movie {
+        width: 48%; 
+    }
+
+    input[type="text"] {
+        width: 200px; 
+    }
+}
